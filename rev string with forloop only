@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char k[]="kirankumar";
+    int l=strlen(k);
+    int i=0;
+    for(i=l-1;i>=0;i--)
+    printf("%c",k[i]);
+}
+
+
+using func pointer:
+
+
+#include<stdio.h>
+#include<string.h>
+char rev(char k[],int l)
+{
+    
+    int i=0;
+    printf("rev a string:");
+    for(i=l-1;i>=0;i--)
+    {
+    printf("%c",k[i]);
+    }
+}
+int main()
+{
+    char k[20];
+    printf("enter the character:");
+    scanf("%s",k);
+    int l=strlen(k);
+    printf("%d\n",l);
+    char (*fptr)(char [], int)=rev;
+    fptr(k,l);
+}
