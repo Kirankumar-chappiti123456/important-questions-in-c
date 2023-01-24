@@ -1,0 +1,8 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char i=3;
+    i=((i&0x0f)<<4)|((i&0xf0)>>4);
+    printf("nipple a bit:%d",i);
+}
