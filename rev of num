@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main()
+{
+int n=12345,r,s;
+int m=n;
+while(n>0)
+{
+   r=n%10;
+   s=s*10+r;
+   n=n/10;
+}
+//(s==m)?printf("palindrome"):printf("not a palindrome");
+ printf("%d",s);   
+}
+
