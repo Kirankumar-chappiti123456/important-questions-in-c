@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+#define N 32
+int main()
+{
+    int a,b,c=0,i=0;
+    printf("enter the number:");
+    scanf("%d %d",&a,&b);
+    for(i=0;i<N-1;i++)
+    {
+        if((a>>i&1)&&(b>>i&1))
+        {
+            c++;
+        }
+    }
+    printf("%d",c);
+}
