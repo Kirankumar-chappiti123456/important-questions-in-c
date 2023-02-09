@@ -1,0 +1,57 @@
+
+mult:
+
+#include<stdio.h>
+int main()
+{
+    int a=10,b=3,s=0;
+    while(b--)
+    {
+        s=s+a;
+    }
+    printf("%d",s);
+}
+
+#include<stdio.h>
+int main()
+{
+    int a=12,b=10,s=0;
+    while(b!=0)
+    {
+        if(b&1)
+        {
+            s=s+a;
+        }
+        a<<=1;
+        b>>=1;
+    }
+    printf("%d",s);
+}
+
+
+add:
+
+#include<stdio.h>
+int main()
+{
+    int a=10,b=3,s=0;
+   while(b--)
+   {
+       a++;
+   }
+   printf("%d",a);
+}
+
+
+sub:
+
+#include<stdio.h>
+int main()
+{
+    int a=10,b=3,s=0;
+   while(b--)
+   {
+       a--;
+   }
+   printf("%d",a);
+}
