@@ -15,3 +15,19 @@ int main()
     }
     printf("%d",c);
 }
+
+
+
+
+#include<stdio.h>
+#define N sizeof(int)*8
+int main()
+{
+    int a=12,pos=2;
+    while(pos--)
+    {
+        int lsb=a&1;
+        a=a<<1|lsb;
+    }
+    printf("%d",a);
+}
